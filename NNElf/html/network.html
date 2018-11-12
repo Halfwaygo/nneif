@@ -1,0 +1,37 @@
+<div class="box border primary">
+	<div class="box-title small">
+		<h4><i class="fa fa-picture-o"></i>Network Structure - [ <b id="network_name_editor" style="display:inline">Untitled_Network</b> ]</h4>
+		<div class="pull-right btn-toolbar">
+			<div class="btn-group dropdown">
+				<button class="btn btn-xs btn-info dropdown-toggle" data-toggle="dropdown">
+					<i class="fa fa-th"></i> Layout <i class="fa fa-angle-down"></i>
+				</button>
+				<ul class="dropdown-menu context">
+					<li><a href="javascript:;" onclick="AlignHori()">Align Horizontal</a></li>
+					<li><a href="javascript:;" onclick="AlignVert()">Align Vertical</a></li>
+					<li><a href="javascript:;" onclick="ArrangeHori()">Arrange Horizontal</a></li>
+					<li><a href="javascript:;" onclick="ArrangeVert()">Arrange Vertical</a></li>
+					<li><a href="javascript:;">Automatic</a></li>
+				</ul>
+			</div>
+			<div class="btn-group dropdown">
+				<button class="btn btn-xs btn-info dropdown-toggle" data-toggle="dropdown">
+					<i class="fa fa-floppy-o"></i> Save <i class="fa fa-angle-down"></i>
+				</button>
+				<ul class="dropdown-menu context">
+					<li><a href="javascript:;" onclick="saveJSON()">as .json</a></li>
+					<li><a href="javascript:;">as train_val.prototxt</a></li>
+					<li><a href="javascript:;">as deploy.prototxt</a></li>
+				</ul>
+			</div>
+			<div class="btn-group">
+				<input type="file" id="load_file" onchange="loadFile(this)" style="display:none" />
+				<button class="btn btn-xs btn-info" onclick="load_file.click()"><i class="fa fa-folder-open-o"></i> Load</button>
+			</div>
+		</div>
+	</div>
+	<div class="box-body">
+		<div class="alert alert-info jtk-canvas jtk-surface jtk-surface-nopan" id="canvas">
+		</div>
+	</div>
+</div>

@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Neural Network Elf</title>
+	<meta name="renderer" content="webkit" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- STYLESHEETS --><!--[if lt IE 9]>
+		<script src="static/js/flot/excanvas.min.js"></script>
+		<script src="static/js/html5shiv/html5.js"></script>
+		<script src="static/js/html5shiv/css3-mediaqueries.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="static/css/cloud-admin.css">
+	<link rel="stylesheet" href="static/css/themes/default.css" id="skin-switcher">
+	<link rel="stylesheet" href="static/css/responsive.css">
+	<!-- FUELUX TREE -->
+	<link rel="stylesheet" href="static/js/fuelux-tree/fuelux.min.css">
+	<!-- FONTS -->
+	<link rel='stylesheet' href='static/css/font-open-sans.css'>
+	<link rel="stylesheet" href="static/font-awesome/css/font-awesome.min.css">
+	<!-- jsPlumb -->
+	<link rel="stylesheet" href="static/js/jsPlumb/jsPlumbToolkit-defaults.css">
+	<!-- NNElf -->
+	<link rel="stylesheet" href="static/NNElf/NNElf.css">
+	<!-- JQUERY -->
+	<script src="static/js/jquery/jquery-2.0.3.min.js"></script>
+	<script src="static/NNElf/NNElf-pre.js"></script>
+</head>
+
+<body>
+	<!-- HEADER -->
+	{% include "header.html" %}
+	<!--/HEADER -->
+
+	<!-- PAGE -->
+	<section id="page">
+		<!-- SIDEBAR -->
+		{% include "sidebar.html" %}
+		<!-- /SIDEBAR -->
+
+		<div id="main-content">
+			<!-- MODAL DIALOGS-->
+        	{% include "modal.html" %}
+        	<!-- /MODAL DIALOGS-->
+
+			<div class="container">
+				<!-- CONTENT -->
+				<div class="row clearfix">
+					<!-- WORKSPACE -->
+					<div class="box border">
+						<div class="box-title">
+							<h4><i class="fa fa-desktop"></i>Workspace</h4>
+						</div>
+						<!-- TABS -->
+						<div class="box-body">
+							<div class="tabbable header-tabs">
+								<ul class="nav nav-tabs">
+									<li><a href="#tab_weight" data-toggle="tab">
+										<i class="fa fa-pencil-square-o"></i> <span class="hidden-inline-mobile">Weights</span>
+									</a></li>
+									<li class="active"><a href="#tab-network" data-toggle="tab">
+										<i class="fa fa-sitemap"></i> <span class="hidden-inline-mobile">Network</span>
+									</a></li>
+								</ul>
+
+								<div class="tab-content">
+									<!-- TAB NETWORK -->
+									{% include "tab-network.html" %}
+									<!-- /TAB NETWORK -->
+									<!-- TAB WEIGHT -->
+									{% include "tab-weight.html" %}
+									<!-- /TAB WEIGHT -->
+								</div>
+							</div>
+						</div>
+						<!-- /TABS -->
+					</div>
+					<!-- /WORKSPACE -->
+				</div>
+				<!-- /CONTENT -->
+			</div>
+		</div>
+	</section>
+	<!--/PAGE -->
+
+	<!-- JAVASCRIPTS -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<!-- JQUERY UI-->
+	<script src="static/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<script src="static/bootstrap-dist/js/bootstrap.min.js"></script>
+	<!-- FUELUX TREE -->
+	<script src="static/js/fuelux-tree/fuelux.tree.js"></script>
+	<!-- SLIMSCROLL -->
+	<script src="static/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
+	<script src="static/js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
+	<!-- COOKIE -->
+	<script src="static/js/jQuery-Cookie/jquery.cookie.min.js"></script>
+	<!-- JEDITABLE -->
+	<script src="static/js/Jeditable/jquery.jeditable.js"></script>
+	<!-- CUSTOM SCRIPT -->
+	<script src="static/js/script.js"></script>
+	<!-- jsPlumb -->
+	<script src="static/js/jsPlumb/jsPlumb-2.0.7-min.js"></script>
+	<!-- NNElf -->
+	<script src="static/NNElf/NNElf.js"></script>
+	<script>
+		jQuery(document).ready(function() {
+			//App.setPage("widgets_box");  //Set current page
+			App.init(); //Initialise plugins and elements
+		});
+	</script>
+	<!-- /JAVASCRIPTS -->
+</body>
+</html>

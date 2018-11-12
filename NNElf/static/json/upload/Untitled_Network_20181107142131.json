@@ -1,0 +1,1 @@
+{"name":"Untitled_Network","layer-1541571678063":{"type":"subnet","cls":"Original","max_in":1,"mutex":"","left":544,"top":171,"parent":[],"child":[],"inplace_parent":"","inplace_child":[],"num":0,"channels":0,"height":0,"width":0,"dead":false,"param":{"name":{"type":"str","required":1,"enabled":true,"default":"","value":"admin"}}}}

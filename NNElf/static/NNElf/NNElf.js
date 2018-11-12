@@ -1,0 +1,9 @@
+include('common.js');
+include('triggers.js');
+include('jsPlumb.js');
+include('layer-data.js');
+include('layer-view.js');
+include('layer-config.js');
+include('layer-inplace.js');
+include('layout.js');
+include('save-load.js');

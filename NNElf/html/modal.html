@@ -1,0 +1,67 @@
+<!-- about box -->
+<div class="modal fade" id="about-box" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title"><i class="fa fa-info-circle"></i> Neural Network Elf</h4>
+			</div>
+			<div class="modal-body">
+				This is a tool to edit the neural network structure and its weights for convenience.<br>
+				It is built on purpose of promoting the utilization of awesome "Deep Learning".<br>
+				We are currently working on the caffe-style prototxt.<br>
+				Any problem in using this tool please don't be hesitated to let me know.<br>
+				It is a great honor if you think it useful.<br><br>
+				<i class="fa fa-user"></i> Author : Ke Jia<br>
+				<i class="fa fa-envelope-o"></i> Email : jiake@cbpm-kexin.com<br>
+				<i class="fa fa-phone"></i> Phone : 139 8086 1682
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- input box -->
+<div class="modal fade" id="input-box" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title"><i class="fa fa-pencil"></i> Please Specify the Name of Layer</h4>
+			</div>
+			<div class="modal-body">
+				<div class="form-horizontal form-group" id="input-form">
+					<label class="col-md-2 control-label">Name</label>
+					<div class="col-md-9">
+						<input type="text" class="form-control" id="input-name" placeholder="Enter name" onkeyup="return checkInput(event)">
+						<span class="help-block" style="display:none" id="input-warning"></span>
+					</div>
+				</div>
+				<div class="divide-20" style="display:none" id="input-space"></div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary" disabled id="input-submit">Submit</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- alert box -->
+<div class="modal fade" id="alert-box" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title"><i class="fa fa-exclamation-circle"></i> Alert</h4>
+			</div>
+			<div class="modal-body">
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>

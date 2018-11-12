@@ -1,0 +1,77 @@
+/* --- sidebar structure --- */
+.sidebar-menu > ul > li > ul.sub .has-sub-sub > a .arrow:before {
+	content: "\f0d9";
+}
+.sidebar-menu > ul > li > ul.sub .has-sub-sub > a .arrow.open:before {
+	content: "\f0d7";
+}
+
+/* --- panel structure --- */
+.panel .panel-heading .tools {
+	float: right;
+}
+
+.panel .panel-heading .tools > i {
+	color: #c4c4c4;
+	margin-left: 7px;
+}
+
+.panel .panel-heading .tools > i:hover {
+	color: #ababab;
+}
+
+/* --- canvas structure --- */
+.jtk-canvas {
+    margin-left: 0;
+    height: 55em;
+}
+
+.jtk-canvas .jsplumb-endpoint {
+    z-index: 3;
+}
+
+/* --- layers structure --- */
+.layer {
+	padding: 10px;
+	position: absolute;
+	cursor: move;
+}
+
+.dragHover {
+	border-color: #fff;
+}
+
+.layer-phase {
+	padding-right: 30px;
+}
+
+.in-docker {
+	color: #5e87b0;
+	position: absolute;
+	width: 100%;
+	margin: -20px -9px;
+}
+
+.out-docker {
+	color: #5e87b0;
+	position: absolute;
+	width: 100%;
+	margin: 0 -9px;
+	cursor: pointer;
+}
+
+.layer .separator {
+	margin: 10px 0 10px;
+}
+
+.phase {
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 3px;
+	padding-right: 11px;
+	position: absolute;
+	width: 14px;
+	line-height: 0px;
+	right: 5px;
+	bottom: 30%;
+}

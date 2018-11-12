@@ -1,0 +1,95 @@
+<div id="sidebar" class="sidebar">
+	<div class="sidebar-menu nav-collapse">
+		<!-- SIDEBAR MENU -->
+		<ul>
+			<li class="has-sub">
+				<a href="javascript:;"><i class="fa fa-sitemap fa-fw"></i><span class="menu-text">Network Templates</span><span class="arrow"></span></a>
+				<ul class="sub">
+					<li><a href="javascript:;" onclick="removeAll()"><span class="sub-menu-text"><i class="fa fa-file-o"></i>Blank Template</span></a></li>
+					{% for item in network %}
+					<li><a href="javascript:;" onclick="loadPreset('{{ item }}')"><span class="sub-menu-text">{{ item }}</span></a></li>
+					{% endfor %}
+				</ul>
+			</li>
+
+			<li class="has-sub">
+				<a href="javascript:;"><i class="fa fa-puzzle-piece fa-fw"></i><span class="menu-text">Layers</span><span class="arrow"></span></a>
+				<ul class="sub">
+					<li class="has-sub-sub">
+						<a href="javascript:;"><span class="sub-menu-text">Input Layers</span><span class="arrow"></span></a>
+						<ul class="sub-sub">
+							{% for item in input %}
+							<li><a href="javascript:;" class="drag-layer" id="tmpl-{{ item }}"><span class="btn btn-success sub-sub-menu-text">{{ item }}</span></a></li>
+							{% endfor %}
+						</ul>
+					</li>
+					<li class="has-sub-sub">
+						<a href="javascript:;"><span class="sub-menu-text">Calculation Layers</span><span class="arrow"></span></a>
+						<ul class="sub-sub">
+							{% for item in calc %}
+							<li><a href="javascript:;" class="drag-layer" id="tmpl-{{ item }}"><span class="btn btn-warning sub-sub-menu-text">{{ item }}</span></a></li>
+							{% endfor %}
+						</ul>
+					</li>
+					<li class="has-sub-sub">
+						<a href="javascript:;"><span class="sub-menu-text">Inplace Layers</span><span class="arrow"></span></a>
+						<ul class="sub-sub">
+							{% for item in inplace %}
+							<li><a href="javascript:;" class="drag-layer" id="tmpl-{{ item }}"><span class="btn btn-default sub-sub-menu-text">{{ item }}</span></a></li>
+							{% endfor %}
+						</ul>
+					</li>
+					<li class="has-sub-sub">
+						<a href="javascript:;"><span class="sub-menu-text">Transform Layers</span><span class="arrow"></span></a>
+						<ul class="sub-sub">
+							{% for item in trans %}
+							<li><a href="javascript:;" class="drag-layer" id="tmpl-{{ item }}"><span class="btn btn-yellow sub-sub-menu-text">{{ item }}</span></a></li>
+							{% endfor %}
+						</ul>
+					</li>
+					<li class="has-sub-sub">
+						<a href="javascript:;"><span class="sub-menu-text">Output Layers</span><span class="arrow"></span></a>
+						<ul class="sub-sub">
+							{% for item in output %}
+							<li><a href="javascript:;" class="drag-layer" id="tmpl-{{ item }}"><span class="btn btn-purple sub-sub-menu-text">{{ item }}</span></a></li>
+							{% endfor %}
+						</ul>
+					</li>
+				</ul>
+			</li>
+
+			<li class="has-sub">
+				<a href="javascript:;"><i class="fa fa-code-fork fa-fw"></i><span class="menu-text">Sub Networks</span><span class="arrow"></span></a>
+				<ul class="sub">
+					<li class="has-sub-sub">
+						<a href="javascript:;"><span class="sub-menu-text">Inception</span><span class="arrow"></span></a>
+						<ul class="sub-sub">
+							{% for item in Inception %}
+							<li><a href="javascript:;" class="drag-layer" id="snet-{{ item }}"><span class="btn btn-danger sub-sub-menu-text">{{ item }}</span></a></li>
+							{% endfor %}
+						</ul>
+					</li>
+					<li class="has-sub-sub">
+						<a href="javascript:;"><span class="sub-menu-text">ResNet</span><span class="arrow"></span></a>
+						<ul class="sub-sub">
+							{% for item in ResNet %}
+							<li><a href="javascript:;" class="drag-layer" id="snet-{{ item }}"><span class="btn btn-danger sub-sub-menu-text">{{ item }}</span></a></li>
+							{% endfor %}
+						</ul>
+					</li>
+				</ul>
+			</li>
+
+			<li>
+				<a href="javascript:;"><i class="fa fa-pencil-square-o fa-fw"></i><span class="menu-text">Weight Editor</span></a>					
+			</li>
+
+			<li>
+				<a href="javascript:;" data-target="#about-box" data-toggle="modal">
+					<i class="fa fa-info-circle fa-fw"></i><span class="menu-text">About</span>
+				</a>
+			</li>
+		</ul>
+		<!-- /SIDEBAR MENU -->
+	</div>
+</div>
